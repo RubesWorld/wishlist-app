@@ -1,0 +1,142 @@
+# OSX
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Bundle artifacts
+*.jsbundle
+
+# Expo
+.expo/
+dist/
+web-build/
+*.orig.*
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.swp
+*.swo
+*~
+
+# Backend specific
+backend/dist/
+backend/.env
+backend/logs/
+backend/uploads/
+backend/tmp/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates
+*.pem
+*.p12
+*.key
+*.crt
+
+# Temporary files
+*.tmp
+.temp/
+tmp/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Python (if using any Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# AWS
+.aws/
+
+# Misc
+.cache/
+.parcel-cache/
+.next/
+out/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.env.production.local
+.env.development.local
+.env.test.local
