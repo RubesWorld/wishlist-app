@@ -8,6 +8,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "detox test --configuration ios.sim.debug",
+    "test:e2e:build": "detox build --configuration ios.sim.debug",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type-check": "tsc --noEmit"
   },
