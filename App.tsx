@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NavigationContainer } from '@react-navigation/native';
-import { ThemeProvider } from 'react-native-elements';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <SafeAreaProvider>
-        <ThemeProvider>
-          <NavigationContainer>
-            <StatusBar style="auto" />
-            {/* Navigation will be added here */}
-          </NavigationContainer>
-        </ThemeProvider>
-      </SafeAreaProvider>
-    </GestureHandlerRootView>
+    <View style={styles.container}>
+      <Text style={styles.text}>Hello World!</Text>
+      <Text style={styles.subtext}>Wishlist App is running</Text>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  subtext: {
+    fontSize: 16,
+    color: '#666',
+  },
+});
