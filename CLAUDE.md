@@ -103,3 +103,13 @@ When asked to implement a new feature:
 7. Confirm all tests pass with coverage report
 
 Remember: Red → Green → Refactor → Repeat
+
+## Workflow
+
+Tier: lean
+Base branch: main
+Checks: none yet
+
+- TODO: `npm install` fails on the pinned Expo 49 dependency tree, so `type-check`, `lint` and `test` cannot run. Fix the install, then set Checks to `npm run type-check && npm run lint && npm test`.
+
+Used by the user-level `/start` → `/build` → `/ship` commands. `Tier: off` opts this repo out.
